@@ -1,0 +1,41 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --muted: #a1a1aa;
+  --text: #e5e7eb;
+  --accent: #22d3ee;
+  --error: #f87171;
+  --card: #0b1220;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; background: var(--bg); color: var(--text); }
+.container { max-width: 900px; margin: 0 auto; padding: 24px; }
+header { text-align: center; margin-bottom: 16px; }
+h1 { margin: 0; font-size: 32px; letter-spacing: 0.3px; }
+.subtitle { color: var(--muted); margin-top: 4px; }
+
+.tabs { display: flex; gap: 8px; justify-content: center; margin: 8px 0 16px; flex-wrap: wrap; }
+.tab { background: #0b1220; border: 1px solid #1f2937; color: var(--text); padding: 8px 14px; border-radius: 999px; cursor: pointer; }
+.tab.active { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(34,211,238,0.25) inset; }
+
+.panel { background: var(--panel); border: 1px solid #1f2937; border-radius: 16px; padding: 20px; }
+.row { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
+.input { flex: 1; padding: 10px 12px; border-radius: 10px; border: 1px solid #1f2937; background: #0b1220; color: var(--text); }
+.unit { color: var(--muted); }
+.btn { background: var(--accent); color: #001317; border: none; padding: 10px 14px; border-radius: 10px; cursor: pointer; font-weight: 600; }
+.btn:active { transform: translateY(1px); }
+
+.card { background: var(--card); border: 1px solid #1f2937; border-radius: 14px; padding: 16px; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+
+.metrics { list-style: none; padding: 0; margin: 8px 0 6px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.metrics li { display:flex; justify-content: space-between; padding: 8px; background: #0f172a; border-radius: 8px; border: 1px solid #1f2937; }
+.metrics span { color: var(--muted); }
+.metrics strong { font-variant-numeric: tabular-nums; }
+
+.big { font-size: 28px; font-weight: 700; }
+.quote { margin-top: 16px; border-left: 4px solid var(--accent); padding-left: 12px; }
+.skeleton { color: var(--muted); }
+.error { color: var(--error); margin-top: 8px; }
+
+footer { text-align:center; margin-top: 16px; color: var(--muted); }
